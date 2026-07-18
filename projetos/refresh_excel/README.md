@@ -8,7 +8,12 @@ a conclusao antes de salvar.
 1. Coloque o arquivo `.xlsx`/`.xlsm` na mesma pasta do script.
 2. Ajuste a constante `EXCEL_FILENAME` no topo de `refresh_excel.py` para o
    nome real do arquivo.
-3. Instale as dependencias (na raiz do repositorio): `pip install -r ../../requirements.txt`
+3. Crie um venv local nesta pasta e instale as dependencias:
+   ```
+   python -m venv venv
+   venv\Scripts\activate
+   pip install -r requirements.txt
+   ```
 4. Execute: `python refresh_excel.py`
 5. Confira o log gerado em `refresh_excel.log` (mesma pasta).
 

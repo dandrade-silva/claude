@@ -7,10 +7,11 @@
 
 ## Organizacao do repositorio
 
-- `requirements.txt` e `venv/` ficam na raiz e sao compartilhados por todas
-  as automacoes.
-- Cada automacao vive em `projetos/<nome>/`, com seu proprio script(s),
-  dados, log e README explicando o uso especifico.
+- Cada automacao vive em `projetos/<nome>/`, isolada e autossuficiente: seu
+  proprio script(s), `requirements.txt`, dados, log e README com o uso
+  especifico.
+- Cada automacao tem seu proprio `venv/` local (nao versionado, coberto pelo
+  `.gitignore` na raiz).
 
 ## Projetos
 
